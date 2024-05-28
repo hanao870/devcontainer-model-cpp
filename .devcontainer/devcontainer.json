@@ -1,0 +1,15 @@
+{
+    "name": "C++ Develop",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "ms-vscode.cpptools",
+                "cschlosser.doxdocgen"
+            ]
+        }
+    }
+}
