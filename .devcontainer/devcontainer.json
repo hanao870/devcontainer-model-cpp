@@ -4,11 +4,13 @@
     "customizations": {
         "vscode": {
             "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
                 "editor.formatOnSave": true
             },
             "extensions": [
                 "ms-vscode.cpptools",
-                "cschlosser.doxdocgen"
+                "cschlosser.doxdocgen",
+                "matepek.vscode-catch2-test-adapter"
             ]
         }
     }
