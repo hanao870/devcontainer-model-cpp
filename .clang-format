@@ -1,5 +1,10 @@
+---
 # 各スタイルの設定確認コマンド
 # clang-format --style=Google --dump-config
 # 設定項目の詳細は以下を参照
 # https://clang.llvm.org/docs/ClangFormatStyleOptions.html#configurable-format-style-options
+Language: Cpp
 BasedOnStyle: Google
+---
+Language: Json
+DisableFormat: true
