@@ -1,0 +1,18 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-added-large-files
+      - id: detect-private-key # 秘密鍵の有無をチェック
+      # - id: end-of-file-fixer # ファイルの末尾が改行かチェック
+      # - id: no-commit-to-branch   # 特定のブランチに直接コミットできないようにする
+      #   args: [--branch, master]  # どのブランチにコミットできないようにするかを設定できる. デフォルトは master/main
+      - id: check-json  # コメント付き json ではシンタックスエラーとなる
+      - id: fix-byte-order-marker # UTF-8 バイトオーダーマーカーを削除
+  # clang-format のフォーマットチェック
+  - repo: https://github.com/pre-commit/mirrors-clang-format
+    rev: v18.1.5
+    hooks:
+    - id: clang-format

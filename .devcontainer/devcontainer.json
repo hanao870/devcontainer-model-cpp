@@ -13,5 +13,6 @@
                 "matepek.vscode-catch2-test-adapter"
             ]
         }
-    }
+    },
+    "postStartCommand": "sh .devcontainer/postStartCommand.sh"
 }
