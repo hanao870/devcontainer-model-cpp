@@ -1,5 +1,5 @@
 # pre-commit を使用するために python のベースイメージを選択
-FROM python:3.12.3
+FROM python:3.13.0
 
 # 開発用パッケージインストール
 RUN apt-get update \
@@ -17,7 +17,7 @@ ENV TZ Asia/Tokyo
 
 # Google Test インストール
 WORKDIR /tmp
-RUN git clone https://github.com/google/googletest.git -b v1.14.0
+RUN git clone https://github.com/google/googletest.git -b v1.15.2
 WORKDIR /tmp/googletest/_build
 RUN cmake -D CMAKE_INSTALL_PREFIX=/usr/local -D CMAKE_BUILD_TYPE=Release .. 
 RUN make && make install 
